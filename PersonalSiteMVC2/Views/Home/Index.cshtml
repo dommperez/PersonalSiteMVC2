@@ -1,31 +1,145 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Dominic Perez";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Dominic Perez</span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="~/Content/img/profilepic.jpg" alt="Profile Image" /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#resume">Resume</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#classmates">Classmates</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="@Url.Action("Contact", "Home")">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- Page Content-->
+<div class="container-fluid p-0">
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">
+                Dominic
+                <span class="text-primary">Perez</span>
+            </h1>
+            <div class="subheading mb-5">
+                Kansas City, MO 64030 · (816) 813-3018 ·
+                <a href="mailto:dperez20002@outlook.com">dperez20002@outlook.com</a>
+            </div>
+            <p class="lead mb-5">I am a fullstack developer. I've always known that I wanted to do something with computers and after a class I took at Centriq in middle school called Geek Week I knew that I wanted to do something with software development. I enjoy coding in React its fun learning more about it and seeing everything it can do. Some more personal things I enjoy are video games and reading comics or manga.</p>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/dominic-perez-891033227/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/dommperez"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Experience</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Centriq Training</h3>
+                    <div class="subheading mb-3">Full Stack Web Developer</div>
+                    <p>At Centriq Training I went through the Full Stack Web Development program where I have learned multiple different coding languages such as HTML 5, CSS, C#, MVC, SQL, and React.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Summit Technology Academy</h3>
+                    <div class="subheading mb-3">Software Development - Applications</div>
+                    <p>My Junior year of High School I spent my mornings at Summit Tech where I learned to code in C# we made small apps and learned the basics of the language. The class was slow paced and we spent a lot of time focusing on one thing at a time.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Dominos</h3>
+                    <div class="subheading mb-3">Customer Service Rep</div>
+                    <p>My time at Dominos i spent checking out customers, answering the phones, preping different things around the store, making the food, and helping the drivers with deliveries basically helping out with everything around the store. I got a lot of customer service experience and since I was working there while I was in High School I also had to learn time managment.</p>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Healthcare Resort of Leawood</h3>
+                    <div class="subheading mb-3">Dietary Aide</div>
+                    <p>At the Healthcare Resort of Leawood I would help serve the residents their meals after the food was brought down to my kitchen and assist the residents with whatever they needed like an alternate meal if there was some reason they couldnt have it or if they just wanted something else. I also had to make sure everything was stocked properly in the kitchen. I got to work a lot with the residents and got to know some of them past my job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Resume-->
+    <section class="resume-section" id="resume">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Resume</h2>
+            
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Projects-->
+    <section class="resume-section" id="projects">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Projects</h2>
+            <h2>StoreFront App</h2>
+            <a href="#storefront.d-perez.net" class="btn btn-primary btn-white">View</a>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+            <h2>University Pair Project</h2>
+            <a href="#universityproject.dominic-perez.com" class="btn btn-primary btn-white">View</a>
+
+            <h2>React App</h2>
+            <a href="#reactapp.dominic-perez.com" class="btn btn-primary btn-white">View</a>
+
+            <h2>Todo API</h2>
+            <a href="#todoapi.dominic-perez.com" class="btn btn-primary btn-white">View</a>
+
+            <h2>Dungeon App</h2>
+            <a href="https://github.com/dommperez/DungeonApplication" class="btn btn-primary btn-white">View</a>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Classmates-->
+    <section class="resume-section" id="classmates">
+        <h2 class="mb-5">Classmates</h2>
+        <div class="">
+            <img class="img-fluid img-profile rounded-circle mx-md-auto mb-2" src="~/Content/img/1635119977945.jpg" alt="Classmate Image" />
+            <a href="https://www.linkedin.com/in/ant-millan/">Anthony Millan</a>
+            <br />
+            <img class="img-fluid img-profile rounded-circle mx-md-auto mb-2" src="~/Content/img/1637342013103.jpg" alt="Classmate Image" />
+            <a href="https://www.linkedin.com/in/chris-a-allen/">Cristopher Allen</a>
+            <br />
+            <img class="img-fluid img-profile rounded-circle mx-md-auto mb-2" src="~/Content/img/1634994309827.jpg" alt="Classmate Image" />
+            <a href="https://www.linkedin.com/in/vbierschwale/">Virgil Bierschwale</a>
+            <br />
+            <img class="img-fluid img-profile rounded-circle mx-md-auto mb-2" src="~/Content/img/jerod.jpg" alt="Classmate Image" />
+            <a href="https://www.linkedin.com/in/jerod-denny/">Jerod Denny</a>
+            <br />
+        </div>
+        <div>
+            <img class="img-fluid img-profile rounded-circle mx-md-auto mb-2" src="~/Content/img/lynn.jpg" alt="Classmate Image" />
+            <a href="https://www.linkedin.com/in/lynnd/">Lynn DiPlacito</a>
+            <br />
+            <img class="img-fluid img-profile rounded-circle mx-md-auto mb-2" src="~/Content/img/amber.jpg" alt="Classmate Image" />
+            <a href="https://www.linkedin.com/in/amber-mills-a05771147/">Amber Mills</a>
+            <br />
+            <img class="img-fluid img-profile rounded-circle mx-md-auto mb-2" src="~/Content/img/josh.jpg" alt="Classmate Image" />
+            <a href="https://www.linkedin.com/in/joshua-owens-711752100/">Joshua Owens</a>
+            <br />
+            <img class="img-fluid img-profile rounded-circle mx-md-auto mb-2" src="~/Content/img/max.jpg" alt="Classmate Image" />
+            <a href="https://www.linkedin.com/in/maxthewebsmith/">Max Smith</a>
+            <br />
+        </div>
+    </section>
+    <hr class="m-0" />
 </div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="~/Scripts/js/scripts.js"></script>
